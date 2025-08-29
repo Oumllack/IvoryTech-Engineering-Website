@@ -157,8 +157,8 @@ Ce site est conçu pour IvoryTech Engineering. Pour contribuer :
 
 Pour toute question ou suggestion concernant le site :
 - **Email** : ivorytechengineering@gmail.com
-- **LinkedIn** : [IvoryTech Engineering](https://linkedin.com/company/ivorytech-engineering)
-- **Facebook** : [IvoryTech Engineering](https://facebook.com/ivorytech-engineering)
+- **LinkedIn** : [IvoryTech Engineering](https://www.linkedin.com/company/ivorytech-engineering/)
+- **Facebook** : [IvoryTech Engineering](https://www.facebook.com/share/1B5UHCh9fb/?mibextid=wwXIfr)
 
 ---
 
