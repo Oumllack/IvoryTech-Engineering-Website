@@ -684,6 +684,13 @@ h1, h2, h3, h4, h5, h6 {
         border-left: none;
         border-top: 1px solid #e1e5e9;
         justify-content: center;
+        display: flex !important;
+        width: 100%;
+    }
+    
+    .lang-link {
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem !important;
     }
     
     .nav-toggle {
@@ -726,8 +733,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .footer-logo {
-        align-items: center;
-        text-align: center;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .footer-logo-img {
+        margin: 0 auto 1rem !important;
     }
     
     .projects-grid {

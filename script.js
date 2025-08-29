@@ -3,11 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
+    console.log('Nav toggle:', navToggle);
+    console.log('Nav menu:', navMenu);
+    
     // Toggle menu mobile
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-    });
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            console.log('Toggle clicked');
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    }
     
     // Fermer le menu quand on clique sur un lien
     const navLinks = document.querySelectorAll('.nav-link');
