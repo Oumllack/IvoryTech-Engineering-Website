@@ -757,13 +757,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     /* Masquer COMPLÈTEMENT le sélecteur de langue principal sur mobile */
-    .language-switcher {
+    .language-switcher,
+    .desktop-only {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         position: absolute !important;
         left: -9999px !important;
         pointer-events: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        border: 0 !important;
     }
     
     .hero {
