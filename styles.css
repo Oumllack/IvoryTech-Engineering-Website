@@ -138,6 +138,31 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--color-secondary);
 }
 
+/* Sélecteur de langue mobile */
+.mobile-language-switcher {
+    display: none;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.mobile-lang-link {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.mobile-lang-link:hover,
+.mobile-lang-link.active {
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    transform: scale(1.1);
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -695,6 +720,16 @@ h1, h2, h3, h4, h5, h6 {
     
     .nav-toggle {
         display: flex;
+    }
+    
+    /* Afficher le sélecteur de langue mobile */
+    .mobile-language-switcher {
+        display: flex !important;
+    }
+    
+    /* Masquer le sélecteur de langue principal sur mobile */
+    .language-switcher {
+        display: none !important;
     }
     
     .hero {
