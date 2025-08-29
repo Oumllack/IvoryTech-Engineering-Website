@@ -163,6 +163,20 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.1);
 }
 
+/* Fix pour Safari - éviter la duplication des drapeaux */
+@supports (-webkit-appearance: none) {
+    .mobile-language-switcher {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    .mobile-lang-link {
+        flex-shrink: 0 !important;
+        flex-grow: 0 !important;
+    }
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
