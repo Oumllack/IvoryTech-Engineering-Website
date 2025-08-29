@@ -175,6 +175,21 @@ h1, h2, h3, h4, h5, h6 {
         flex-shrink: 0 !important;
         flex-grow: 0 !important;
     }
+    
+    /* Force Safari à masquer le sélecteur principal sur mobile */
+    @media (max-width: 768px) {
+        .language-switcher {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+            pointer-events: none !important;
+            width: 0 !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+    }
 }
 
 .nav-toggle {
@@ -741,9 +756,14 @@ h1, h2, h3, h4, h5, h6 {
         display: flex !important;
     }
     
-    /* Masquer le sélecteur de langue principal sur mobile */
+    /* Masquer COMPLÈTEMENT le sélecteur de langue principal sur mobile */
     .language-switcher {
         display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        position: absolute !important;
+        left: -9999px !important;
+        pointer-events: none !important;
     }
     
     .hero {
