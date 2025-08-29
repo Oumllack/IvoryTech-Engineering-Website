@@ -765,15 +765,26 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+        align-items: center !important;
     }
     
     .footer-logo {
         align-items: center !important;
         text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
     }
     
     .footer-logo-img {
         margin: 0 auto 1rem !important;
+        display: block !important;
+    }
+    
+    .footer-logo h3,
+    .footer-logo p {
+        text-align: center !important;
+        width: 100% !important;
     }
     
     .projects-grid {
