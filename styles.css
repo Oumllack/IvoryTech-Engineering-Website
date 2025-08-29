@@ -762,10 +762,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .footer-content {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        text-align: center !important;
         align-items: center !important;
+        justify-content: center !important;
     }
     
     .footer-logo {
@@ -774,17 +775,20 @@ h1, h2, h3, h4, h5, h6 {
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
+        justify-content: center !important;
     }
     
     .footer-logo-img {
         margin: 0 auto 1rem !important;
         display: block !important;
+        align-self: center !important;
     }
     
     .footer-logo h3,
     .footer-logo p {
         text-align: center !important;
         width: 100% !important;
+        align-self: center !important;
     }
     
     .projects-grid {
