@@ -761,7 +761,7 @@ h1, h2, h3, h4, h5, h6 {
         gap: 2rem;
     }
     
-    /* Footer mobile centré */
+    /* Footer mobile centré - APPROCHE ULTRA-AGRESSIVE */
     .footer-content {
         flex-direction: column !important;
         gap: 1rem !important;
@@ -777,17 +777,26 @@ h1, h2, h3, h4, h5, h6 {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
     
     .footer-logo-img {
         margin: 0 auto 1rem !important;
         display: block !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
     
     .footer-logo h3,
     .footer-logo p {
         text-align: center !important;
         width: 100% !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
     
     .projects-grid {

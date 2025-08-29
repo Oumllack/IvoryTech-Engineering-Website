@@ -73,40 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
     
-    // Centrage du footer sur mobile
-    function centerFooterOnMobile() {
-        const footerLogo = document.getElementById('footer-logo');
-        if (footerLogo && window.innerWidth <= 768) {
-            footerLogo.style.textAlign = 'center';
-            footerLogo.style.display = 'flex';
-            footerLogo.style.flexDirection = 'column';
-            footerLogo.style.alignItems = 'center';
-            footerLogo.style.justifyContent = 'center';
-            footerLogo.style.width = '100%';
-            
-            const logoImg = footerLogo.querySelector('.footer-logo-img');
-            if (logoImg) {
-                logoImg.style.margin = '0 auto 1rem';
-                logoImg.style.display = 'block';
-            }
-            
-            const logoTitle = footerLogo.querySelector('h3');
-            if (logoTitle) {
-                logoTitle.style.textAlign = 'center';
-                logoTitle.style.width = '100%';
-            }
-            
-            const logoDesc = footerLogo.querySelector('p');
-            if (logoDesc) {
-                logoDesc.style.textAlign = 'center';
-                logoDesc.style.width = '100%';
-            }
-        }
-    }
-    
-    // Appliquer le centrage au chargement et au redimensionnement
-    centerFooterOnMobile();
-    window.addEventListener('resize', centerFooterOnMobile);
+    /* Footer mobile centré avec CSS - JavaScript supprimé */
     
     // Gestion du formulaire de contact
     const contactForm = document.querySelector('.contact-form');
